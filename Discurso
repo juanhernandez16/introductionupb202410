@@ -1,0 +1,138 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN7io1t75sdMD1XMF6pFmrG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/juanhernandez16/introductionupb202410/blob/main/Discurso\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Discurso"
+      ],
+      "metadata": {
+        "id": "KDKvvVWTk45k"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "id": "NAF7Ridxk3NF",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0d728339-94c3-4f5e-9da2-a6f301c13934"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Princes me gustaría trabajar suave todo el dia sin compromiso.\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "\n",
+        "palabras_reggaeton = {}\n",
+        "\n",
+        "def generador_cancion(palabras_reggaeton):\n",
+        "    cancion = ''\n",
+        "    for key in palabras_reggaeton.keys():\n",
+        "      word = random.choice(palabras_reggaeton[key])\n",
+        "      cancion += word\n",
+        "    return cancion\n",
+        "\n",
+        "sujeto = ['Mami ', 'Bebé ', 'Princes ', 'Mami ', 'Brrr ', 'Reina ', 'Hermosa ']\n",
+        "intencion = ['yo quiero ', 'yo puedo ', 'yo vengo a ', 'voy a ', 'pretendo ', 'me gustaría ']\n",
+        "accion = ['encendelte ', 'amalte ', 'ligar ', 'jugar ', 'cocinar ', 'trabajar ']\n",
+        "adjetivo = ['suave ', 'lento ', 'rápido ', 'fuerte ', 'duro ', 'convencido ']\n",
+        "duracion = ['hasta que salga el sol ', 'toda la noche ', 'hasta el amanecer ', 'todo el dia ', 'por la noche ']\n",
+        "manera = ['sin anestecia.', 'sin compromiso.', 'feis to feis.', 'sin miedo.', 'intensamente.']\n",
+        "\n",
+        "palabras_reggaeton ['sujto'] = sujeto\n",
+        "palabras_reggaeton ['intencion'] = intencion\n",
+        "palabras_reggaeton ['accion'] = accion\n",
+        "palabras_reggaeton ['adjetivo'] = adjetivo\n",
+        "palabras_reggaeton ['duracion'] = duracion\n",
+        "palabras_reggaeton ['manera'] = manera\n",
+        "\n",
+        "print(cancion)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "\n",
+        "palabras_reggaeton = {}\n",
+        "\n",
+        "def generador_cancion(palabras_reggaeton):\n",
+        "    cancion = ''\n",
+        "    for key in palabras_reggaeton.keys():\n",
+        "        word = random.choice(palabras_reggaeton[key])\n",
+        "        cancion += word\n",
+        "    return cancion\n",
+        "\n",
+        "sujeto = ['Mami ', 'Bebé ', 'Princes ', 'Mami ', 'Brrr ', 'Reina ', 'Hermosa ']\n",
+        "intencion = ['yo quiero ', 'yo puedo ', 'yo vengo a ', 'voy a ', 'pretendo ', 'me gustaría ']\n",
+        "accion = ['encendelte ', 'amalte ', 'ligar ', 'jugar ', 'cocinar ', 'trabajar ']\n",
+        "adjetivo = ['suave ', 'lento ', 'rápido ', 'fuerte ', 'duro ', 'convencido ']\n",
+        "duracion = ['hasta que salga el sol ', 'toda la noche ', 'hasta el amanecer ', 'todo el dia ', 'por la noche ']\n",
+        "manera = ['sin anestecia.', 'sin compromiso.', 'feis to feis.', 'sin miedo.', 'intensamente.']\n",
+        "\n",
+        "palabras_reggaeton['sujto'] = sujeto\n",
+        "palabras_reggaeton['intencion'] = intencion\n",
+        "palabras_reggaeton['accion'] = accion\n",
+        "palabras_reggaeton['adjetivo'] = adjetivo\n",
+        "palabras_reggaeton['duracion'] = duracion\n",
+        "palabras_reggaeton['manera'] = manera\n",
+        "\n",
+        "cancion = generador_cancion(palabras_reggaeton)\n",
+        "print(cancion)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IDqYK7SfsGti",
+        "outputId": "f3bdca91-d059-41b7-9bf9-fe53885b5eaa"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Princes me gustaría trabajar suave todo el dia sin compromiso.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
